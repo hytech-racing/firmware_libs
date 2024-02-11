@@ -1,0 +1,20 @@
+{
+    "name": "hytech_libs",
+    "version": "0.0.1",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/RCMast3r/firmware_libraries.git"
+    },
+    "export": {
+      "include": [
+        "interfaces/include/*.h",
+        "systems/include/*.h",
+        "systems/src/*.cpp",
+        "systems/src/*.tpp",
+        "interfaces/src/*.tpp",
+        "interfaces/src/*.cpp"
+      ]
+    },
+    "frameworks": "*",
+    "platforms": "*"
+  }
