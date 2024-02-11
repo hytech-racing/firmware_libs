@@ -5,14 +5,17 @@
       "type": "git",
       "url": "https://github.com/RCMast3r/firmware_libraries.git"
     },
+    "build": {
+        "includeDir": ".",
+        "flags": [
+          "-I interfaces/include/",
+          "-I systems/include/"
+        ]
+    },
     "export": {
-      "include": [
-        "interfaces/include/*.h",
-        "systems/include/*.h",
-        "systems/src/*.cpp",
-        "systems/src/*.tpp",
-        "interfaces/src/*.tpp",
-        "interfaces/src/*.cpp"
+      "exclude": [
+        "mock_interfaces",
+        "pio_testing"
       ]
     },
     "frameworks": "*",
